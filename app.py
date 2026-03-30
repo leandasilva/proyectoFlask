@@ -39,7 +39,7 @@ IMG_SIZE = (32, 32)
 
 @app.route('/')
 def index():
-    return render_template('templates/index.html')
+    return render_template('index.html')
 
 @app.route('/predecir', methods=['POST'])
 def predecir():
@@ -76,7 +76,7 @@ def predecir():
     print(f"Predicción: {resultado}")
 
     # Ruta relativa para HTML
-    ruta_relativa = f"imagenes/{archivo.filename}"
+    ruta_relativa = f"static/imagenes/{archivo.filename}"
 
     return render_template('resultado.html', imagen=ruta_relativa, resultado=resultado)
 
