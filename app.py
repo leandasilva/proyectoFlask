@@ -6,7 +6,7 @@ import numpy as np
 import os
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'static/imagenes'
+app.config['UPLOAD_FOLDER'] = 'static/imagenes/.gitkeep'
 
 # Diccionario de clases
 clases = {
