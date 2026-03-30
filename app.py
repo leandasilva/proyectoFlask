@@ -39,7 +39,7 @@ IMG_SIZE = (32, 32)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 @app.route('/predecir', methods=['POST'])
 def predecir():
